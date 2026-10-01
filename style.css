@@ -1,0 +1,27 @@
+/* 通配符，清除浏览器默认的边距和填充，保证所有浏览器初始显示一致 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 让宽度计算包含内边距和边框，防止撑破页面 */
+}
+
+/* 设置整个页面的字体和背景 */
+body {
+    font-family: system-ui, -apple-system, sans-serif; /* 使用系统默认无衬线字体，干净清爽 */
+    background-color: #f4f4f9; /* 设置页面背景色为浅灰色 */
+    color: #333; /* 设置全局字体颜色为深灰色 */
+    line-height: 1.6; /* 设置行高，让文字不拥挤 */
+}
+
+/* 让页面主要内容居中，并设置最大宽度 */
+header, main, footer {
+    max-width: 800px; /* 最大宽度800像素，防止在大屏上拉得太宽 */
+    margin: 0 auto; /* 左右自动边距，实现居中 */
+    padding: 20px; /* 给四周留出内边距，避免内容贴边 */
+}
+
+/* 给一级标题换个显眼的颜色 */
+h1 {
+    color: #0056b3; /* 深蓝色 */
+    margin-bottom: 20px; /* 标题底部留出20像素的间距 */
+}
